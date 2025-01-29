@@ -1,5 +1,12 @@
 console.log('Hello world!');
 
+pageSetup();
+
+function pageSetup() {
+    initGlobalUsers();
+    renderUsers();
+}
+
 let globalUsers = [];
 
 function initGlobalUsers() {
@@ -20,3 +27,6 @@ function initGlobalUsers() {
         password: 'lego'
     });
 }
+
+
+
